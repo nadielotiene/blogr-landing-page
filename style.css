@@ -1,4 +1,174 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+:root {
+    /* Layout */
+    --mobile: 375px;
+    --desktop: 1440px;
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+    /* Colors */
+
+    /* Primary */
+    --red-500: hsl(356, 100%, 66%);
+    --red-400: hsl(355, 100%, 74%);
+    --blue-900: hsl(208, 49%, 24%);
+
+    /* Neutral */
+    --white: hsl(0, 100%, 100%);
+    --gray-600: hsl(207, 13%, 34%);
+    --gray-900: hsl(240, 10%, 16%);
+
+    /* Gradient */
+    /* Background gradient - intro/CTA mobile nav: */
+    --orange-300: hsl(13, 100%, 72%);
+    --red-550: hsl(353, 100%, 62%);
+
+    /* Background gradient - body: */
+    --purple-950: hsl(237, 17%, 21%);
+    --purple-900: hsl(237, 23%, 31%);
+    
+    /* Font */
+
+    --p-font-size: 1rem;
+    
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+}
+
+html, body {
+    font-family: "Ubuntu", sans-serif;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    max-width: 100%;
+    /* overflow-x: hidden; */
+}
+
+/* .page-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 100vh;
+    width: 100%;
+} */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.header {
+    font-size: var(--p-font-size);
+    background-color: var(--red-550);
+    color: var(--white);
+    border-radius: 0 0 0 100px;
+    /* grid-area: header; */
+    /* width: 100%; */
+}
+
+.header-bar--div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 100px;
+}
+
+.menu-icon {
+    height: 20px;
+    width: 35px;
+}
+
+ul, li, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* .header__btn--div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.btn, .menu-icon {
+    cursor: pointer;
+}
+
+.start-free__btn,
+.learn-more__btn {
+    font-weight: var(--medium);
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.start-free__btn {
+    background-color: var(--white);
+    color: var(--red-550);
+}
+
+.learn-more__btn {
+    background-color: var(--red-550);
+    color: var(--white);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* .main {
+    color: var(--blue-900)
+}
+
+.mid-main--div {
+    background-color: var(--purple-950);
+    color: var(--white);
+    border-radius: 0 100px 0 100px ;
+    height: 400px;
+}
+
+.phones-img {
+    position: absolute;
+    width: 350px;
+    z-index: 2;
+    top: 750px;
+}
+
+.circles-img {
+    z-index: 1;
+}
+
+.highlight {
+    z-index: 3;
+} */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.footer__category,
+.footer__link {
+    color: var(--white)
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--gray-900);
+    border-radius: 0 100px 0 0;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
