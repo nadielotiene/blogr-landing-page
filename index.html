@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="page-wrapper">
-  <header class="header container">
+  <header class="header">
     <!-- <nav class="nav" id="mobile-nav">
       <ul class="menu">
         <li class="nav__list has-dropdown">
@@ -55,7 +55,7 @@
       </div>
     </nav> -->
 
-    <div class="container">
+    <section class="container">
       <div class="header-bar--div">
         <img src="./images/logo.svg" alt="Blogr logo" class="header-logo">
         <img src="./images/icon-hamburger.svg" alt="Hamburger menu icon" class="menu-icon">
@@ -67,12 +67,12 @@
         <button class="start-free__btn btn">Start for Free</button> 
         <button class="learn-more__btn btn">Learn More</button> 
       </div>
-    </div>
+    </section>
   </header>
 
 
   <main class="main">
-    <div class="container">
+    <section class="container">
       <h2 class="main__h">Designed for the future</h2> 
 
       <img src="./images/illustration-editor-mobile.svg" alt="illustration editor" class="main-img">
@@ -88,19 +88,25 @@
       <p class="main__p">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
         by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
       </p>
+    </section>
 
-      <div class="mid-main--div">
-        <div class="container">
-          <img src="./images/illustration-phones.svg" alt="illustration editor" class="phones-img">
-          <img src="./images/bg-pattern-circles.svg" alt="illustration editor" class="circles-img">
-    
-          <h2 class="main__h highlight">State of the Art Infrastructure</h2>
-          <p class="main__p highlight">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+    <div class="mid-main--outer">
+      <img src="./images/illustration-phones.svg" alt="two smart phones" class="phones-img">
+    </div>
+
+    <section class="mid-main--div">
+      <div class="container">
+        <img src="./images/bg-pattern-circles.svg" alt="circles" class="circles-img">
+        <div class="highlight">
+          <h2 class="main__h">State of the Art Infrastructure</h2>
+          <p class="main__p">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
             This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
           </p>
         </div>
       </div>
+    </section>
 
+    <section class="container">
       <img src="./images/illustration-laptop-mobile.svg" alt="illustration editor" class="main-img">
 
       <h2 class="main__h">Free, open, simple</h2>
@@ -113,11 +119,11 @@
       <p class="main__p">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
         capable of producing even the most complicated sites.
       </p>
-    </div>
+    </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <section class="container">
       <img src="./images/logo.svg" alt="Blogr icon" class="footer-logo">
       <ul class="menu">
         <li class="footer__list">
@@ -144,7 +150,7 @@
           <li class="footer__list"><a href="#" class="footer__link">LinkedIn</a></li> 
         </ul>
       </ul>
-    </div>
+    </section>
   </footer>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
