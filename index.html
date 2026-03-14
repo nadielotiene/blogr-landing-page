@@ -60,16 +60,87 @@
         <img src="./images/logo.svg" alt="Blogr logo" class="header-logo">
         <img src="./images/icon-hamburger.svg" alt="Hamburger menu icon" class="menu-icon">
       </div>
-      <h1 class="header__h">A modern publishing platform</h1> 
-      <p class="header__p">Grow your audience and build your online brand</p> 
+      <div class="header--content">
+        <h1 class="header__h">A modern publishing platform</h1> 
+        <p class="header__p">Grow your audience and build your online brand</p> 
 
-      <div class="header__btn--div">
-        <button class="start-free__btn btn">Start for Free</button> 
-        <button class="learn-more__btn btn">Learn More</button> 
+        <div class="header__btn--div">
+          <button class="start-free__btn btn">Start for Free</button> 
+          <button class="learn-more__btn btn">Learn More</button> 
+        </div>
       </div>
     </section>
   </header>
 
+  <nav class="nav">
+    <ul class="menu" id="mobile-nav">
+      <li class="nav__list has-dropdown">
+        <a href="#" class="nav__link">
+          <span class="nav__text">Product</span>
+          <img src="./images/icon-arrow-dark.svg" alt="" class="arrow-icon">
+        </a>
+        <div class="nested--div">
+          <ul class="dropdown nested features">
+            <li class="nav__list">
+              <a href="#" class="nav__link">Overview</a>
+            </li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Pricing</a>
+            </li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Marketplace</a>
+            </li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Features</a>
+            </li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Integrations</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav__list has-dropdown">
+        <a href="#" class="nav__link">
+          <span class="nav__text">Company</span>
+          <img src="./images/icon-arrow-dark.svg" alt="" class="arrow-icon">
+        </a>
+        <ul class="dropdown nested features">
+          <li class="nav__list">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__list">
+            <a href="#" class="nav__link">Team</a>
+          </li>
+          <li class="nav__list">
+            <a href="#" class="nav__link">Blog</a>
+          </li>
+          <li class="nav__list">
+            <a href="#" class="nav__link">Careers</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__list has-dropdown">
+        <a href="#" class="nav__link">
+          <span class="nav__text">Connect</span>
+          <img src="./images/icon-arrow-dark.svg" alt="" class="arrow-icon">
+        </a>
+        <ul class="dropdown nested features">
+          <li class="nav__list">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+          <li class="nav__list">
+            <a href="#" class="nav__link">Newsletter</a>
+          </li>
+          <li class="nav__list">
+            <a href="#" class="nav__link">LinkedIn</a>
+          </li>
+        </ul>
+      </li>
+      <div class="hr"></div>
+      <h3>Login</h3>
+      <button class="sign-up__btn btn">Sign Up</button>
+    </ul>
+  </nav>
 
   <main class="main">
     <section class="container">

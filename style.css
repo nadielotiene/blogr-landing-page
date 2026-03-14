@@ -41,7 +41,7 @@
     --bold: 700;
 }
 
-html, body {
+html, body, .nav__text, .nav__link {
     font-family: "Overpass", sans-serif;
     font-optical-sizing: auto;
     max-width: 100%;
@@ -76,13 +76,14 @@ a, button {
 
 .header {
     font-size: var(--p-font-size);
-    background-image: url("./images/bg-pattern-intro-mobile.svg");
+    background-image: url("./images/bg-pattern-intro-mobile.svg"),
+        linear-gradient(to bottom right, var(--orange-300), var(--red-550));
     background-color: var(--red-550);
     color: var(--white);
     border-radius: 0 0 0 100px;
     background-repeat: no-repeat;
-    background-position: 30% 30%;
-    background-size: 300%;
+    background-position: 36% 34%;
+    background-size: 350%;
 }
 
 .header-bar--div {
@@ -99,6 +100,19 @@ a, button {
 .menu-icon {
     height: 20px;
     width: 35px;
+}
+
+.header--content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* max-width: 90%; */
+}
+
+.header__btn--div {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -136,14 +150,14 @@ ul, li, a {
 }
 
 .learn-more__btn {
-    background-color: var(--red-550);
+    background-color: transparent;
     color: var(--white);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .header__h {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: var(--regular);
     padding-top: 5rem;
     /* text-wrap: pretty; */
@@ -153,6 +167,38 @@ ul, li, a {
     font-size: 1rem;
     font-weight: var(--light);
     padding: 1rem 0 2rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ Nav ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.nav {
+    background-color: var(--white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: var(--purple-900);
+}
+
+.nav__text {
+    font-weight: var(--medium);
+    line-height: 1rem;
+}
+
+.nav__link {
+    color: var(--purple-900);
+}
+
+.nested--div {
+    background-color: lightgray;
+    border-radius: 4px;
+}
+
+.hr {
+    border-top: 1.9px solid lightgray;
+}
+
+h3 {
+    font-weight: var(--regular);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
