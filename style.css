@@ -75,6 +75,7 @@ a, button {
 /* ~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .header {
+    position: relative;
     font-size: var(--p-font-size);
     background-image: url("./images/bg-pattern-intro-mobile.svg"),
         linear-gradient(to bottom right, var(--orange-300), var(--red-550));
@@ -172,11 +173,24 @@ ul, li, a {
 /* ~~~~~~~~~~~~~~~~~~~~~~~ Nav ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .nav {
+    display: none;
+    position: absolute;
+    top: 6rem;
+    left: 1rem;
+    right: 1rem;
     background-color: var(--white);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    color: var(--purple-900);
+    border-radius: 8px;
+    padding: 1.5rem;
+    z-index: 10;
+    color: var(--gray-900);
+}
+
+#menu-close {
+    display: none;
+}
+
+.nav.open {
+    display: block;
 }
 
 .nav__text {
@@ -188,9 +202,24 @@ ul, li, a {
     color: var(--purple-900);
 }
 
+.arrow-icon {
+    width: 10px;
+    margin-left: 6px;
+    transition: transform 0.3s;
+}
+
 .nested--div {
-    background-color: lightgray;
+    display: block;
+    background-color: #EEE;
     border-radius: 4px;
+}
+
+.has-dropdown.open .nested--div {
+    display: none;
+}
+
+.has-dropdown.open .arrow-icon {
+    transform: rotate(180deg);
 }
 
 .hr {
@@ -199,6 +228,15 @@ ul, li, a {
 
 h3 {
     font-weight: var(--regular);
+}
+
+.signup__btn {
+    font-weight: var(--medium);
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    padding: 12px 20px;
+    background: linear-gradient(to right, var(--orange-300), var(--red-550));
+    color: var(--white);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
